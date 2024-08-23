@@ -23,7 +23,7 @@ export const checkUser = async () => {
       name: `${user.firstName} ${user.lastName}`,
       imageUrl: user.imageUrl,
       username: user.username,
-      email: user.emailAddresses?.[0]?.emailAddress || 'none',
+      email: user.emailAddresses?.[0]?.emailAddress || null,
     },
   });
 
