@@ -8,6 +8,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import Link from "next/link";
 
 const SheetC = () => {
   return (
@@ -15,12 +16,15 @@ const SheetC = () => {
       <SheetTrigger>
         <Menu className="text-white" />
       </SheetTrigger>
-      <SheetContent>
+      <SheetContent side="left">
         <SheetHeader>
-          <SheetTitle>Are you absolutely sure?</SheetTitle>
+          <SheetTitle>Menu</SheetTitle>
           <SheetDescription>
-            This action cannot be undone. This will permanently delete your
-            account and remove your data from our servers.
+            <ul className="flex flex-col">
+              <li><Link href="/" className="w-full">Home</Link></li>
+              <li><Link href="/logs">Logs</Link></li>
+              <li><Link href="/about">About</Link></li>
+            </ul>
           </SheetDescription>
         </SheetHeader>
       </SheetContent>
