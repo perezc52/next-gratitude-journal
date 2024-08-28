@@ -14,7 +14,7 @@ const SheetC = () => {
   return (
     <Sheet>
       <SheetTrigger>
-        <Menu className="text-white" />
+        <Menu className="text-white md:hidden" />
       </SheetTrigger>
       <SheetContent side="left">
         <SheetHeader>
