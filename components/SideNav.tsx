@@ -11,7 +11,7 @@ const SideNav = async () => {
       <div className="flex items-center gap-2">
         <SheetC />
         <h1 className="text-white md:hidden">
-          <Link href="/">Gratitude Journal</Link>
+          <Link href="/">Gratitude Journals</Link>
         </h1>
       </div>
       <div className="md:flex md:flex-col md:items-center md:justify-center">
